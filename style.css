@@ -287,3 +287,10 @@ body {
 .db-actions ul { list-style: none; padding: 0; margin: 0; }
 .db-actions li { font-size: 12px; color: #475569; font-weight: bold; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
 .db-actions i { color: var(--verde-principal); font-size: 14px; }
+
+/* --- ESTILO PARA O BRASÃO (LOGO) --- */
+.site-logo {
+    max-width: 180px; /* Ajuste esse valor para deixar a logo maior ou menor */
+    height: auto;
+    display: block;
+}
