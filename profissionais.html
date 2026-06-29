@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profissionais - Treinaseg Connectta</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos específicos para a página de profissionais */
+        .page-content {
+            padding: 40px 5%;
+            background-color: var(--fundo-claro);
+            min-height: 60vh;
+        }
+        .page-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .page-header h2 {
+            color: var(--verde-principal);
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        /* Barra de Busca */
+        .search-bar {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            display: flex;
+            gap: 15px;
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+        .search-bar input, .search-bar select {
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .search-bar input { flex: 2; }
+        .search-bar select { flex: 1; }
+        .btn-buscar {
+            background-color: var(--azul-escuro);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Grid de Profissionais */
+        .pro-grid {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .pro-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 280px;
+            padding: 25px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .pro-avatar {
+            width: 80px;
+            height: 80px;
+            background-color: #cbd5e1;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+        }
+        .pro-card h3 { color: var(--azul-escuro); margin: 0 0 5px; font-size: 18px; }
+        .pro-role { color: var(--verde-principal); font-size: 13px; font-weight: bold; margin-bottom: 10px; }
+        .pro-rating { color: var(--amarelo-detalhe); font-size: 14px; margin-bottom: 15px; }
+        .pro-tags {
+            display: flex;
+            gap: 5px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .tag {
+            background-color: #f1f5f9;
+            color: var(--texto-cinza);
+            font-size: 11px;
+            padding: 4px 8px;
+            border-radius: 12px;
+        }
+        .btn-contratar {
+            display: block;
+            padding: 10px;
+            background-color: var(--verde-principal);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .btn-voltar {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--texto-cinza);
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-area">
+            <h1>🔗 TREINASEG<br>CONNECTTA</h1>
+        </div>
+        <div class="title-area">
+            <h2>REDE DE <span>PROFISSIONAIS</span></h2>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <a href="index.html" class="btn-voltar">⬅ Voltar para a página inicial</a>
+        
+        <div class="page-header">
+            <h2>👥 Encontre Especialistas</h2>
+            <p>Contrate técnicos, engenheiros e instrutores qualificados para sua demanda.</p>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar por NR, cargo ou habilidade...">
+            <select>
+                <option value="">Todos os Estados</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+            </select>
+            <button class="btn-buscar">Pesquisar</button>
+        </div>
+
+        <div class="pro-grid">
+            
+            <div class="pro-card">
+                <div class="pro-avatar">👨‍💻</div>
+                <h3>Carlos Eduardo</h3>
+                <div class="pro-role">Engenheiro de Segurança</div>
+                <div class="pro-rating">⭐⭐⭐⭐⭐ (4.9)</div>
+                <div class="pro-tags">
+                    <span class="tag">LTCAT</span>
+                    <span class="tag">PGR</span>
+                    <span class="tag">NR-12</span>
+                </div>
+                <a href="#" class="btn-contratar">Ver Perfil e Contratar</a>
+            </div>
+
+            <div class="pro-card">
+                <div class="pro-avatar">👩‍🔧</div>
+                <h3>Mariana Souza</h3>
+                <div class="pro-role">Técnica de Segurança (TST)</div>
+                <div class="pro-rating">⭐⭐⭐⭐⭐ (5.0)</div>
+                <div class="pro-tags">
+                    <span class="tag">NR-35</span>
+                    <span class="tag">NR-33</span>
+                    <span class="tag">Treinamentos</span>
+                </div>
+                <a href="#" class="btn-contratar">Ver Perfil e Contratar</a>
+            </div>
+
+            <div class="pro-card">
+                <div class="pro-avatar">👨‍🏫</div>
+                <h3>Roberto Alves</h3>
+                <div class="pro-role">Instrutor Especializado</div>
+                <div class="pro-rating">⭐⭐⭐⭐½ (4.7)</div>
+                <div class="pro-tags">
+                    <span class="tag">NR-10</span>
+                    <span class="tag">SEP</span>
+                    <span class="tag">Primeiros Socorros</span>
+                </div>
+                <a href="#" class="btn-contratar">Ver Perfil e Contratar</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer-banner">
+        🛡️ SEGURANÇA NÃO É SÓ UMA OBRIGAÇÃO. É VALOR PARA SUA EMPRESA E PROTEÇÃO PARA VIDAS.
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamentos - Treinaseg Connectta</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos específicos para a página de treinamentos */
+        .page-content {
+            padding: 40px 5%;
+            background-color: var(--fundo-claro);
+            min-height: 50vh;
+        }
+        .page-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .page-header h2 {
+            color: var(--verde-principal);
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .course-grid {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .course-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .course-card h3 { color: var(--azul-escuro); margin-top: 0;}
+        .btn-acessar {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: var(--verde-principal);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .btn-voltar {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--texto-cinza);
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-area">
+            <h1>🔗 TREINASEG<br>CONNECTTA</h1>
+        </div>
+        <div class="title-area">
+            <h2>ÁREA DO <span>ALUNO / EMPRESA</span></h2>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <a href="index.html" class="btn-voltar">⬅ Voltar para a página inicial</a>
+        
+        <div class="page-header">
+            <h2>🎓 Treinamentos e NRs</h2>
+            <p>Acesse nossos cursos obrigatórios e de qualificação.</p>
+        </div>
+
+        <div class="course-grid">
+            <div class="course-card">
+                <h3>NR 35 - Trabalho em Altura</h3>
+                <p>Carga horária: 8 horas</p>
+                <a href="#" class="btn-acessar">Acessar Treinamento</a>
+            </div>
+            
+            <div class="course-card">
+                <h3>NR 10 - Instalações Elétricas</h3>
+                <p>Carga horária: 40 horas</p>
+                <a href="#" class="btn-acessar">Acessar Treinamento</a>
+            </div>
+
+            <div class="course-card">
+                <h3>NR 12 - Máquinas e Equip.</h3>
+                <p>Carga horária: 16 horas</p>
+                <a href="#" class="btn-acessar">Acessar Treinamento</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-banner">
+        🛡️ SEGURANÇA NÃO É SÓ UMA OBRIGAÇÃO. É VALOR PARA SUA EMPRESA E PROTEÇÃO PARA VIDAS.
+    </footer>
+
+</body>
+</html>

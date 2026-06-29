@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamentos - Treinaseg Connectta</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos específicos para a página de pagamentos */
+        .page-content {
+            padding: 40px 5%;
+            background-color: var(--fundo-claro);
+            min-height: 60vh;
+        }
+        .page-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .page-header h2 {
+            color: var(--verde-principal);
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        /* Painel Resumo */
+        .finance-panel {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        .finance-card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            width: 250px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .finance-card h4 { margin: 0 0 10px; color: var(--texto-cinza); font-size: 14px; text-transform: uppercase;}
+        .finance-card .amount { font-size: 28px; font-weight: bold; color: var(--azul-escuro); margin-bottom: 15px;}
+        .amount.alert { color: #e11d48; } /* Vermelho para pendente */
+        .btn-pay {
+            background-color: var(--verde-principal);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        /* Histórico de Transações */
+        .transactions-section {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .transactions-section h3 { margin-top: 0; color: var(--azul-escuro); border-bottom: 2px solid var(--fundo-claro); padding-bottom: 10px; }
+        
+        .transaction-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .transaction-item:last-child { border-bottom: none; }
+        .t-info h5 { margin: 0; font-size: 15px; color: #333; }
+        .t-info p { margin: 5px 0 0; font-size: 12px; color: var(--texto-cinza); }
+        .t-value { font-weight: bold; color: var(--azul-escuro); }
+        .t-status { font-size: 11px; padding: 4px 8px; border-radius: 12px; font-weight: bold; margin-left: 15px; }
+        .status-paid { background-color: #dcfce7; color: #166534; }
+        .status-pending { background-color: #fef08a; color: #854d0e; }
+
+        .btn-voltar {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--texto-cinza);
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-area">
+            <h1>🔗 TREINASEG<br>CONNECTTA</h1>
+        </div>
+        <div class="title-area">
+            <h2>CENTRAL <span>FINANCEIRA</span></h2>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <a href="index.html" class="btn-voltar">⬅ Voltar para a página inicial</a>
+        
+        <div class="page-header">
+            <h2>💳 Gestão de Pagamentos</h2>
+            <p>Contrate serviços e gerencie suas faturas com total segurança e praticidade.</p>
+        </div>
+
+        <div class="finance-panel">
+            <div class="finance-card">
+                <h4>Faturas em Aberto</h4>
+                <div class="amount alert">R$ 450,00</div>
+                <button class="btn-pay">Pagar via PIX</button>
+            </div>
+            
+            <div class="finance-card">
+                <h4>Créditos Disponíveis</h4>
+                <div class="amount">R$ 120,00</div>
+                <button class="btn-pay" style="background-color: var(--azul-escuro);">Adicionar Saldo</button>
+            </div>
+        </div>
+
+        <div class="transactions-section">
+            <h3>Histórico Recente</h3>
+            
+            <div class="transaction-item">
+                <div class="t-info">
+                    <h5>Laudo Ergonômico (AET) - Profissional Carlos E.</h5>
+                    <p>Fatura #1042 • Vencimento: 05/11/2023</p>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <div class="t-value">R$ 450,00</div>
+                    <div class="t-status status-pending">AGUARDANDO</div>
+                </div>
+            </div>
+
+            <div class="transaction-item">
+                <div class="t-info">
+                    <h5>Treinamento NR 35 (Turma 02)</h5>
+                    <p>Fatura #1038 • Pago em: 12/10/2023 via Cartão de Crédito</p>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <div class="t-value">R$ 890,00</div>
+                    <div class="t-status status-paid">PAGO</div>
+                </div>
+            </div>
+
+            <div class="transaction-item">
+                <div class="t-info">
+                    <h5>Emissão de Certificados Avulsos</h5>
+                    <p>Fatura #1021 • Pago em: 28/09/2023 via PIX</p>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <div class="t-value">R$ 45,00</div>
+                    <div class="t-status status-paid">PAGO</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-banner">
+        🛡️ SEGURANÇA NÃO É SÓ UMA OBRIGAÇÃO. É VALOR PARA SUA EMPRESA E PROTEÇÃO PARA VIDAS.
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliações - Treinaseg Connectta</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos específicos que reaproveitam a base do nosso site */
+        .page-content {
+            padding: 40px 5%;
+            background-color: var(--fundo-claro);
+            min-height: 50vh;
+        }
+        .page-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .page-header h2 {
+            color: var(--verde-principal);
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .eval-grid {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .eval-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-left: 5px solid var(--amarelo-detalhe); /* Destaque visual diferente dos treinamentos */
+            border-radius: 8px;
+            width: 320px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .eval-card h3 { color: var(--azul-escuro); margin-top: 0; font-size: 18px; }
+        .eval-card p { font-size: 14px; color: var(--texto-cinza); line-height: 1.4; }
+        .btn-solicitar {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            padding: 10px;
+            background-color: var(--azul-escuro);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+        .btn-solicitar:hover {
+            background-color: var(--verde-principal);
+        }
+        .btn-voltar {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--texto-cinza);
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-area">
+            <h1>🔗 TREINASEG<br>CONNECTTA</h1>
+        </div>
+        <div class="title-area">
+            <h2>ÁREA DE <span>AVALIAÇÕES TÉCNICAS</span></h2>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <a href="index.html" class="btn-voltar">⬅ Voltar para a página inicial</a>
+        
+        <div class="page-header">
+            <h2>📋 Emissão de Laudos e Relatórios</h2>
+            <p>Conecte-se com profissionais para realizar avaliações e emitir documentações legais.</p>
+        </div>
+
+        <div class="eval-grid">
+            <div class="eval-card">
+                <h3>Laudo Técnico (LTCAT)</h3>
+                <p>Avaliação das condições ambientais de trabalho para fins de aposentadoria especial.</p>
+                <a href="#" class="btn-solicitar">Solicitar Avaliação</a>
+            </div>
+            
+            <div class="eval-card">
+                <h3>Inspeção NR-12</h3>
+                <p>Análise de riscos e emissão de laudo técnico para máquinas e equipamentos.</p>
+                <a href="#" class="btn-solicitar">Solicitar Avaliação</a>
+            </div>
+
+            <div class="eval-card">
+                <h3>Análise Ergonômica (AET)</h3>
+                <p>Avaliação das condições de trabalho para garantir a saúde e conforto dos profissionais.</p>
+                <a href="#" class="btn-solicitar">Solicitar Avaliação</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-banner">
+        🛡️ SEGURANÇA NÃO É SÓ UMA OBRIGAÇÃO. É VALOR PARA SUA EMPRESA E PROTEÇÃO PARA VIDAS.
+    </footer>
+
+</body>
+</html>

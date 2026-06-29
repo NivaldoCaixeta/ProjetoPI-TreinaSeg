@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificados - Treinaseg Connectta</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos específicos para a página de certificados */
+        .page-content {
+            padding: 40px 5%;
+            background-color: var(--fundo-claro);
+            min-height: 60vh;
+        }
+        .page-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .page-header h2 {
+            color: var(--verde-principal);
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        /* Área de Validação (Onde busca pelo código) */
+        .validation-box {
+            background-color: var(--azul-escuro);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .validation-box h3 { margin-top: 0; color: var(--amarelo-detalhe); }
+        .search-container {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .search-container input {
+            flex: 1;
+            padding: 12px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+        }
+        .btn-validar {
+            padding: 12px 25px;
+            background-color: var(--verde-principal);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Tabela de Certificados Disponíveis */
+        .cert-list {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .cert-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .cert-info h4 { margin: 0; color: var(--azul-escuro); }
+        .cert-info p { margin: 5px 0 0; font-size: 13px; color: var(--texto-cinza); }
+        .cert-status {
+            font-size: 12px;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        .status-valido { background-color: #dcfce7; color: #166534; }
+        .btn-download {
+            background-color: #f4f6f8;
+            color: var(--azul-escuro);
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            border: 1px solid #ddd;
+        }
+        .btn-download:hover { background-color: #eee; }
+
+        .btn-voltar {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--texto-cinza);
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-area">
+            <h1>🔗 TREINASEG<br>CONNECTTA</h1>
+        </div>
+        <div class="title-area">
+            <h2>CENTRAL DE <span>CERTIFICADOS</span></h2>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <a href="index.html" class="btn-voltar">⬅ Voltar para a página inicial</a>
+        
+        <div class="page-header">
+            <h2>📄 Gestão de Certificados</h2>
+            <p>Emita, valide e baixe seus certificados digitais com validade e segurança.</p>
+        </div>
+
+        <div class="validation-box">
+            <h3>VALIDAR CERTIFICADO</h3>
+            <p>Insira o código de autenticidade para verificar a validade do documento.</p>
+            <div class="search-container">
+                <input type="text" placeholder="Ex: ABC-123-456">
+                <button class="btn-validar">VERIFICAR</button>
+            </div>
+        </div>
+
+        <div class="cert-list">
+            <div class="cert-item">
+                <div class="cert-info">
+                    <h4>Certificado NR 35 - Trabalho em Altura</h4>
+                    <p>Concluído em: 15/10/2023 | Validade: 15/10/2025</p>
+                </div>
+                <span class="cert-status status-valido">VÁLIDO</span>
+                <a href="#" class="btn-download">⬇ Baixar PDF</a>
+            </div>
+
+            <div class="cert-item">
+                <div class="cert-info">
+                    <h4>Certificado NR 10 - Segurança em Eletricidade</h4>
+                    <p>Concluído em: 02/09/2023 | Validade: 02/09/2025</p>
+                </div>
+                <span class="cert-status status-valido">VÁLIDO</span>
+                <a href="#" class="btn-download">⬇ Baixar PDF</a>
+            </div>
+
+            <div class="cert-item">
+                <div class="cert-info">
+                    <h4>Primeiros Socorros - Básico</h4>
+                    <p>Concluído em: 20/08/2023 | Validade: 20/08/2024</p>
+                </div>
+                <span class="cert-status status-valido">VÁLIDO</span>
+                <a href="#" class="btn-download">⬇ Baixar PDF</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-banner">
+        🛡️ SEGURANÇA NÃO É SÓ UMA OBRIGAÇÃO. É VALOR PARA SUA EMPRESA E PROTEÇÃO PARA VIDAS.
+    </footer>
+
+</body>
+</html>
