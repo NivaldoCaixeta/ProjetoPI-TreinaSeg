@@ -294,3 +294,91 @@ body {
     height: auto;
     display: block;
 }
+
+/* =========================================
+   RESPONSIVIDADE (CELULARES E TABLETS)
+========================================= */
+@media (max-width: 850px) {
+    /* 1. Ajustes do Cabeçalho */
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        gap: 20px;
+    }
+    .logo-area, .title-area, .badges-area {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    .site-logo {
+        margin: 0 auto 10px; /* Centraliza a logo no celular */
+    }
+    .badges-area {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .badge-item {
+        margin: 0;
+    }
+
+    /* 2. Ajustes da Área Principal (Hero e Dashboard) */
+    .hero {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 30px;
+    }
+    .features, .mockups, .benefits {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+    
+    /* 3. Ajustes do Dashboard (Miolo) */
+    .db-summary {
+        flex-direction: column;
+    }
+    .db-main {
+        flex-direction: column;
+    }
+
+    /* 4. Ajustes do "Como Funciona" */
+    .steps {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .step, .step-arrow {
+        display: block;
+        width: 100%;
+    }
+    .step-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .step-arrow {
+        transform: rotate(90deg); /* Vira a setinha para baixo */
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    /* 5. Ajustes das Páginas Secundárias */
+    .search-bar {
+        flex-direction: column;
+    }
+    .course-card, .eval-card, .pro-card, .finance-card {
+        width: 100%; /* Os cards ocupam a tela toda no celular */
+    }
+    .transaction-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
