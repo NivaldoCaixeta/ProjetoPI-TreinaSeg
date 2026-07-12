@@ -382,3 +382,31 @@ body {
         gap: 10px;
     }
 }
+
+.equipe-container { margin-top: 40px; text-align: center; }
+
+.equipe-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cria 4 colunas iguais */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.aluno-card img {
+    width: 100%;       /* Ocupa toda a largura do seu espaço */
+    height: 200px;     /* Altura fixa para ficar padrão */
+    object-fit: cover; /* Recorta a foto para não distorcer */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.aluno-card p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--azul-escuro);
+}
+
+/* Responsividade: no celular, empilha 2 por linha */
+@media (max-width: 600px) {
+    .equipe-grid { grid-template-columns: repeat(2, 1fr); }
+}
