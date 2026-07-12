@@ -416,3 +416,39 @@ body {
     height: auto;     /* Garante que a altura acompanhe a largura proporcionalmente */
     margin-bottom: 20px;
 }
+.sobre-grid {
+    display: grid;
+    /* Aqui dizemos: coluna da esquerda (img) 40%, coluna da direita (texto) 60% */
+    grid-template-columns: 0.4fr 0.6fr; 
+    gap: 40px;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.sobre-img { 
+    width: 100%; 
+    border-radius: 12px;
+    /* Isso garante que a imagem não fique gigante se o monitor for muito largo */
+    max-width: 350px; 
+    margin: 0 auto; 
+    display: block;
+}
+.sobre-texto h3 { color: var(--azul-escuro); margin-top: 20px; }
+
+/* Ajuste para celular */
+@media (max-width: 850px) {
+    .sobre-grid { grid-template-columns: 1fr; }
+}
+
+/* Ajuste para remover o padding excessivo do card de contato */
+.sobre-texto .contact-box {
+    padding: 15px; 
+    text-align: center;
+}
+
+/* Garante que, em telas pequenas, tudo continue empilhado */
+@media (max-width: 850px) {
+    .sobre-grid { grid-template-columns: 1fr; }
+}
