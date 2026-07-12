@@ -410,3 +410,9 @@ body {
 @media (max-width: 600px) {
     .equipe-grid { grid-template-columns: repeat(2, 1fr); }
 }
+
+.login-box img {
+    max-width: 250px; /* Aumente este valor conforme desejar */
+    height: auto;     /* Garante que a altura acompanhe a largura proporcionalmente */
+    margin-bottom: 20px;
+}
