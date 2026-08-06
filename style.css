@@ -452,3 +452,37 @@ body {
 @media (max-width: 850px) {
     .sobre-grid { grid-template-columns: 1fr; }
 }
+
+/* Organiza os botões lado a lado com um espaço entre eles */
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Estilo do botão de boleto (secundário) */
+.btn-boleto {
+    background-color: transparent;
+    color: var(--azul-escuro); /* Usa a variável que já configuramos antes */
+    border: 2px solid var(--azul-escuro);
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+/* Efeito ao passar o mouse */
+.btn-boleto:hover {
+    background-color: var(--azul-escuro);
+    color: white;
+}
+
+/* Ajuste para telas de celular: empilha os botões para não quebrar o layout */
+@media (max-width: 600px) {
+    .action-buttons {
+        flex-direction: column;
+    }
+}
