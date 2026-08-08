@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificados - Treinaseg Connectta</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-content {
+            padding: 40px 5%;
+            background-color: var(--fundo-claro);
+            min-height: 60vh;
+        }
+        .page-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .page-header h2 {
+            color: var(--verde-principal);
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .validation-box {
+            background-color: var(--azul-escuro);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .validation-box h3 { margin-top: 0; color: var(--amarelo-detalhe); }
+        .search-container {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .search-container input {
+            flex: 1;
+            padding: 12px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+        }
+        .btn-validar {
+            padding: 12px 25px;
+            background-color: var(--verde-principal);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .cert-list {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .cert-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .cert-info h4 { margin: 0; color: var(--azul-escuro); }
+        .cert-info p { margin: 5px 0 0; font-size: 13px; color: var(--texto-cinza); }
+        .cert-status {
+            font-size: 12px;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        .status-valido { background-color: #dcfce7; color: #166534; }
+        .btn-download {
+            background-color: #f4f6f8;
+            color: var(--azul-escuro);
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            border: 1px solid #ddd;
+        }
+        .btn-download:hover { background-color: #eee; }
+        .btn-voltar {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--texto-cinza);
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+    <div class="logo-area">
+        <img src="logo.png" alt="Brasão Treinaseg Connectta" class="site-logo">
+        <p>CONECTANDO CONHECIMENTO,<br>PROMOVENDO SEGURANÇA.</p>
+    </div>
+    
+    <div class="title-area">
+        <h2>ÁREA DE <span>AVALIAÇÕES TÉCNICAS</span></h2>
+    </div>
+
+    <div class="badges-area"></div>
+</header>
+
+   
+<main class="page-content">
+    <div class="resume-container">
+        <a href="profissionais.html" class="btn-back">⬅ Voltar para Especialistas</a>
+
+        <!-- Cabeçalho do Perfil -->
+        <div class="resume-header">
+            <div class="avatar-large">👷‍♀️</div>
+            <h2>Kilda Cristina da Silva</h2>
+            <h4 class="job-title">Técnica em Segurança do Trabalho e Gestora de RH</h4>
+            <div class="contact-badges">
+                <span>📍 Patos de Minas - MG</span>
+                <span>📱 (34) 99876-5432</span>
+                <span>📧 kilda.silva.tst@email.com</span>
+            </div>
+        </div>
+
+        <!-- Corpo do Currículo em Grid -->
+        <div class="resume-body">
+            
+            <!-- COLUNA ESQUERDA -->
+            <div class="resume-column">
+                <div class="resume-card">
+                    <h3>👤 Perfil Profissional</h3>
+                    <p>Técnica em Segurança do Trabalho com formação superior em Gestão de Recursos Humanos e ampla experiência em ambiente industrial e corporativo. Especialista em rotinas de SESMT, elaboração de PGR e PCMSO, inspeções de campo, investigação de acidentes e condução de treinamentos normativos e DDS. Perfil focado na prevenção de acidentes, disseminação de uma cultura de segurança forte e garantia de conformidade legal.</p>
+                </div>
+
+                <div class="resume-card">
+                    <h3>🎓 Formação Acadêmica e Técnica</h3>
+                    <ul class="styled-list">
+                        <li><strong>Técnico em Segurança do Trabalho</strong><br>Instituto Técnico de Ensino Profissionalizante (Registro MTE ativo).</li>
+                        <li><strong>Graduação em Gestão de Recursos Humanos</strong><br>Faculdade de Tecnologia de Minas Gerais.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- COLUNA DIREITA -->
+            <div class="resume-column">
+                <div class="resume-card">
+                    <h3>⭐ Qualificações e Cursos</h3>
+                    <ul class="styled-list check-list">
+                        <li>Auditora Interna ISO 45001.</li>
+                        <li>Especialização em PGR, PCMSO e APR.</li>
+                        <li>Formação em CIPA e Gestão de Riscos Industriais.</li>
+                        <li>Reciclagem em dia para as normas NR-10, NR-35 e NR-11.</li>
+                        <li>Domínio na gestão de EPIs, EPCs e ministração de treinamentos operacionais e DDS.</li>
+                    </ul>
+                </div>
+
+                <div class="resume-card">
+                    <h3>💼 Experiência Profissional Recente</h3>
+                    
+                    <div class="job-item">
+                        <h4>Técnica em Segurança do Trabalho (SESMT)</h4>
+                        <span class="job-company">Indústria Metalúrgica Metalpar Ltda. | 2022 – Presente</span>
+                        <p>Atuação na gestão de riscos operacionais, atualização do PGR, inspeções de segurança na planta fabril, investigação de incidentes com foco em plano de ação, controle rigoroso de EPIs e condução de treinamentos e Diálogos Diários de Segurança (DDS).</p>
+                    </div>
+                    
+                    <div class="job-item">
+                        <h4>Assistente de Segurança do Trabalho</h4>
+                        <span class="job-company">Construtora e Incorporadora Nova Era | 2019 – 2021</span>
+                        <p>Suporte técnico em canteiros de obras, realização de integrações admissionais e fiscalização de normas de segurança e saúde ocupacional.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Botão de Ação Final -->
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="restrito.html" class="btn-contratar">Solicitar Contratação</a>
+        </div>
+    </div>
+</main>
+    <footer class="footer-banner">
+        🛡️ SEGURANÇA NÃO É SÓ UMA OBRIGAÇÃO. É VALOR PARA SUA EMPRESA E PROTEÇÃO PARA VIDAS.
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificados - Treinaseg Connectta</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-content {
+            padding: 40px 5%;
+            background-color: var(--fundo-claro);
+            min-height: 60vh;
+        }
+        .page-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .page-header h2 {
+            color: var(--verde-principal);
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .validation-box {
+            background-color: var(--azul-escuro);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .validation-box h3 { margin-top: 0; color: var(--amarelo-detalhe); }
+        .search-container {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .search-container input {
+            flex: 1;
+            padding: 12px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+        }
+        .btn-validar {
+            padding: 12px 25px;
+            background-color: var(--verde-principal);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .cert-list {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .cert-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .cert-info h4 { margin: 0; color: var(--azul-escuro); }
+        .cert-info p { margin: 5px 0 0; font-size: 13px; color: var(--texto-cinza); }
+        .cert-status {
+            font-size: 12px;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        .status-valido { background-color: #dcfce7; color: #166534; }
+        .btn-download {
+            background-color: #f4f6f8;
+            color: var(--azul-escuro);
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            border: 1px solid #ddd;
+        }
+        .btn-download:hover { background-color: #eee; }
+        .btn-voltar {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--texto-cinza);
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+    <div class="logo-area">
+        <img src="logo.png" alt="Brasão Treinaseg Connectta" class="site-logo">
+        <p>CONECTANDO CONHECIMENTO,<br>PROMOVENDO SEGURANÇA.</p>
+    </div>
+    
+    <div class="title-area">
+        <h2>ÁREA DE <span>AVALIAÇÕES TÉCNICAS</span></h2>
+    </div>
+
+    <div class="badges-area"></div>
+</header>
+
+<main class="page-content">
+    <div class="resume-container">
+        <a href="profissionais.html" class="btn-back">⬅ Voltar para Especialistas</a>
+
+        <!-- Cabeçalho do Perfil -->
+        <div class="resume-header">
+            <div class="avatar-large">👨‍💻</div>
+            <h2>Messias José da Silva</h2>
+            <h4 class="job-title">Técnico em Segurança do Trabalho e Engenheiro</h4>
+            <div class="contact-badges">
+                <span>📍 Belo Horizonte - MG</span>
+                <span>📱 (31) 98765-4321</span>
+                <span>📧 messias.silva.tst@email.com</span>
+            </div>
+        </div>
+
+        <!-- Corpo do Currículo em Grid -->
+        <div class="resume-body">
+            
+            <!-- COLUNA ESQUERDA -->
+            <div class="resume-column">
+                <div class="resume-card">
+                    <h3>👤 Perfil Profissional</h3>
+                    <p>Técnico em Segurança do Trabalho com graduação em Engenharia de Produção e sólida vivência em indústrias e construção civil. Especialista na gestão de SESMT, elaboração de PGR e PCMSO, inspeções de campo, investigação rigorosa de incidentes e condução de treinamentos corporativos. Perfil focado na prevenção de acidentes, disseminação de uma cultura de segurança forte e cumprimento rigoroso da legislação trabalhista.</p>
+                </div>
+
+                <div class="resume-card">
+                    <h3>🎓 Formação Acadêmica e Técnica</h3>
+                    <ul class="styled-list">
+                        <li><strong>Técnico em Segurança do Trabalho</strong><br>Centro Educacional Tecnológico Mineiro (Registro MTE ativo).</li>
+                        <li><strong>Graduação em Engenharia de Produção</strong><br>Universidade Federal de Minas Gerais (UFMG).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- COLUNA DIREITA -->
+            <div class="resume-column">
+                <div class="resume-card">
+                    <h3>⭐ Qualificações e Cursos</h3>
+                    <ul class="styled-list check-list">
+                        <li>Auditor Interno ISO 45001.</li>
+                        <li>Ampla experiência em PGR, PCMSO, APR e liberação de Permissões de Trabalho.</li>
+                        <li>Formação em CIPA, SIPAT e gestão de riscos industriais.</li>
+                        <li>Reciclagem atualizada nas normas NR-10, NR-35 e NR-12.</li>
+                        <li>Domínio na gestão de EPIs/EPCs e facilidade na condução de DDS e treinamentos normativos.</li>
+                    </ul>
+                </div>
+
+                <div class="resume-card">
+                    <h3>💼 Experiência Profissional Recente</h3>
+                    
+                    <div class="job-item">
+                        <h4>Técnico em Segurança do Trabalho Sênior (SESMT)</h4>
+                        <span class="job-company">Indústria Metalúrgica Siderbrás S.A. | 2021 – Presente</span>
+                        <p>Responsável pela atualização do PGR, inspeções de segurança em linhas fabris, investigação de acidentes com foco em planos de ação preventivos, gestão de EPIs e treinamentos operacionais e de liderança.</p>
+                    </div>
+                    
+                    <div class="job-item">
+                        <h4>Técnico em Segurança do Trabalho</h4>
+                        <span class="job-company">Construtora Vertical Engenharia Ltda. | 2019 – 2021</span>
+                        <p>Atuação em canteiro de obras focada em integrações admissionais, fiscalização de normas de campo e suporte administrativo à CIPA.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Botão de Ação Final -->
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="restrito.html" class="btn-contratar">Solicitar Contratação</a>
+        </div>
+    </div>
+</main>
+    <footer class="footer-banner">
+        🛡️ SEGURANÇA NÃO É SÓ UMA OBRIGAÇÃO. É VALOR PARA SUA EMPRESA E PROTEÇÃO PARA VIDAS.
+    </footer>
+
+</body>
+</html>

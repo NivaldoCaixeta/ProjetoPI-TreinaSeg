@@ -486,3 +486,290 @@ body {
         flex-direction: column;
     }
 }
+
+/* --- ESTILO PARA O BLOCO DO BRASÃO E SLOGAN --- */
+.logo-area {
+    text-align: center; /* Centraliza o texto do slogan */
+}
+
+.site-logo {
+    max-width: 130px; /* Mantém o tamanho elegante */
+    height: auto;
+    display: block;
+    margin: 0 auto 8px auto; /* O 'auto' na esquerda e direita é a mágica que centraliza a imagem */
+}
+
+.logo-area p {
+    margin: 0;
+    font-size: 12px; /* Deixa o texto um pouco menor para não brigar com a logo */
+    line-height: 1.4; /* Melhora o espaçamento entre as duas linhas do texto */
+}
+
+/* =========================================
+   ESTILOS DOS CURRÍCULOS (PERFIS)
+========================================= */
+.resume-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.resume-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.avatar-large {
+    font-size: 50px;
+    background: #cbd5e1;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.resume-header h2 { color: var(--azul-escuro); margin: 0 0 5px 0; font-size: 28px; }
+.job-title { color: var(--verde-principal); margin: 0 0 20px 0; font-weight: bold; }
+
+.contact-badges {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-badges span {
+    background-color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    color: var(--azul-escuro);
+    border: 1px solid #cbd5e1;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.resume-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.resume-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+    margin-bottom: 30px;
+    border-top: 4px solid var(--azul-escuro);
+}
+
+.resume-card h3 {
+    color: var(--azul-escuro);
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border-bottom: 1px solid #f1f5f9;
+    padding-bottom: 10px;
+}
+
+.resume-card p {
+    color: var(--texto-cinza);
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+/* Listas customizadas */
+.styled-list { list-style: none; padding: 0; margin: 0; }
+.styled-list li {
+    margin-bottom: 15px;
+    color: var(--texto-cinza);
+    line-height: 1.5;
+    padding-left: 15px;
+    border-left: 3px solid var(--verde-principal);
+    font-size: 14px;
+}
+
+/* Lista com ícone de check */
+.check-list li {
+    border-left: none;
+    padding-left: 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+.check-list li::before {
+    content: "✅";
+    font-size: 14px;
+    margin-top: 2px;
+}
+
+/* Itens de experiência de trabalho */
+.job-item {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #e2e8f0;
+}
+.job-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.job-item h4 { color: var(--azul-escuro); margin: 0 0 5px 0; font-size: 16px;}
+.job-company {
+    display: block;
+    font-size: 13px;
+    color: var(--verde-principal);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Responsividade para Celular */
+@media (max-width: 850px) {
+    .resume-body { grid-template-columns: 1fr; }
+}
+
+/* Estilo para o botão de voltar nos perfis */
+.btn-back {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--azul-escuro);
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.btn-back:hover {
+    color: var(--verde-principal);
+}
+/* Garante o estilo de botão tanto para <button> quanto para <a> */
+.btn-contratar {
+    background-color: var(--verde-principal);
+    color: white !important; /* O !important impede que o navegador deixe o texto azul de link */
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efeito bacana ao passar o mouse */
+.btn-contratar:hover {
+    filter: brightness(0.9); /* Deixa o verde levemente mais escuro */
+    transform: scale(1.02);  /* Dá uma "crescida" sutil no botão */
+}
+
+/* =========================================
+   ESTILOS DAS PÁGINAS DE TREINAMENTO
+========================================= */
+
+/* Limita a largura para a leitura ficar agradável */
+.course-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Título e Carga Horária */
+.course-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 15px;
+}
+
+.course-header h2 {
+    color: var(--azul-escuro);
+    margin: 0;
+    font-size: 26px;
+}
+
+.course-header .badge {
+    background-color: var(--verde-principal);
+    color: white;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* O Falso Player de Vídeo */
+.video-player-mockup {
+    background-color: #1e293b; /* Fundo escuro como um player de verdade */
+    border-radius: 12px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.play-button {
+    background-color: var(--verde-principal);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    padding-left: 8px; /* Truque visual para centralizar o triângulo de play */
+}
+
+/* Efeito ao passar o mouse no player */
+.video-player-mockup:hover .play-button {
+    transform: scale(1.1);
+}
+
+/* Caixa de Texto Descritivo */
+.course-description {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border-left: 5px solid var(--verde-principal); /* Detalhe verde na lateral */
+}
+
+.course-description h3 {
+    color: var(--azul-escuro);
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.course-description p {
+    color: var(--texto-cinza);
+    line-height: 1.7; /* Espaçamento confortável entre as linhas */
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Ajustes para Celular */
+@media (max-width: 768px) {
+    .course-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .video-player-mockup { height: 250px; }
+}

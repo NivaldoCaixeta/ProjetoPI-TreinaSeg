@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificados - Treinaseg Connectta</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-content {
+            padding: 40px 5%;
+            background-color: var(--fundo-claro);
+            min-height: 60vh;
+        }
+        .page-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .page-header h2 {
+            color: var(--verde-principal);
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .validation-box {
+            background-color: var(--azul-escuro);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .validation-box h3 { margin-top: 0; color: var(--amarelo-detalhe); }
+        .search-container {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .search-container input {
+            flex: 1;
+            padding: 12px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+        }
+        .btn-validar {
+            padding: 12px 25px;
+            background-color: var(--verde-principal);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .cert-list {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .cert-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .cert-info h4 { margin: 0; color: var(--azul-escuro); }
+        .cert-info p { margin: 5px 0 0; font-size: 13px; color: var(--texto-cinza); }
+        .cert-status {
+            font-size: 12px;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        .status-valido { background-color: #dcfce7; color: #166534; }
+        .btn-download {
+            background-color: #f4f6f8;
+            color: var(--azul-escuro);
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            border: 1px solid #ddd;
+        }
+        .btn-download:hover { background-color: #eee; }
+        .btn-voltar {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--texto-cinza);
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+    <div class="logo-area">
+        <img src="logo.png" alt="Brasão Treinaseg Connectta" class="site-logo">
+        <p>CONECTANDO CONHECIMENTO,<br>PROMOVENDO SEGURANÇA.</p>
+    </div>
+    
+    <div class="title-area">
+        <h2>ÁREA DE <span>AVALIAÇÕES TÉCNICAS</span></h2>
+    </div>
+
+    <div class="badges-area"></div>
+</header>
+
+<div class="profile-details">
+    
+    
+<main class="page-content">
+    <div class="resume-container">
+        <a href="profissionais.html" class="btn-back">⬅ Voltar para Especialistas</a>
+
+        <!-- Cabeçalho do Perfil -->
+        <div class="resume-header">
+            <div class="avatar-large">👩‍💼</div>
+            <h2>Carla Cristina Rodrigues</h2>
+            <h4 class="job-title">Técnica em Segurança do Trabalho</h4>
+            <div class="contact-badges">
+                <span>📍 Patos de Minas/MG</span>
+                <span>📱 (34) 9 9999-0001</span>
+                <span>📧 carla.rodrigues.tst@email.com</span>
+            </div>
+        </div>
+
+        <!-- Corpo do Currículo em Grid -->
+        <div class="resume-body">
+            
+            <!-- COLUNA ESQUERDA -->
+            <div class="resume-column">
+                <div class="resume-card">
+                    <h3>👤 Resumo e Objetivo</h3>
+                    <p><strong>Objetivo:</strong> Atuar na área de Segurança do Trabalho com foco em prevenção de acidentes, treinamentos, inspeções e apoio às rotinas do SESMT.</p>
+                    <p style="margin-top: 10px;"><strong>Resumo:</strong> Profissional com formação técnica em Segurança do Trabalho e graduação em andamento. Experiência em inspeções, DDS, controle de EPIs, investigação de incidentes e apoio à implementação de programas de segurança, com foco em prevenção e cultura de segurança.</p>
+                </div>
+
+                <div class="resume-card">
+                    <h3>🎓 Formação Acadêmica e Técnica</h3>
+                    <ul class="styled-list">
+                        <li><strong>Graduação em Gestão de Segurança e Saúde no Trabalho</strong><br>Em andamento.</li>
+                        <li><strong>Técnico em Segurança do Trabalho</strong><br>Concluído.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- COLUNA DIREITA -->
+            <div class="resume-column">
+                <div class="resume-card">
+                    <h3>⭐ Cursos Complementares</h3>
+                    <ul class="styled-list check-list">
+                        <li>NR 5, NR 6, NR 10, NR 12, NR 33 e NR 35.</li>
+                        <li>Investigação de acidentes.</li>
+                        <li>PGR e GRO.</li>
+                        <li>DDS e comunicação em segurança.</li>
+                    </ul>
+                </div>
+
+                <div class="resume-card">
+                    <h3>💼 Experiência e Competências</h3>
+                    
+                    <p style="margin-bottom: 10px; color: var(--azul-escuro); font-weight: bold;">Atividades e Experiência:</p>
+                    <ul class="styled-list check-list" style="margin-bottom: 20px;">
+                        <li>Apoio ao SESMT, Suporte ao PGR e PCMSO.</li>
+                        <li>Inspeções de segurança e Investigação de incidentes.</li>
+                        <li>Controle de EPIs, DDS e treinamentos.</li>
+                    </ul>
+
+                    <p style="margin-bottom: 10px; color: var(--azul-escuro); font-weight: bold;">Principais Competências:</p>
+                    <ul class="styled-list check-list">
+                        <li>Prevenção de acidentes e Identificação de riscos.</li>
+                        <li>Comunicação técnica, Organização e responsabilidade.</li>
+                        <li>Trabalho em equipe.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Botão de Ação Final -->
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="restrito.html" class="btn-contratar">Solicitar Contratação</a>
+        </div>
+    </div>
+</main>
+    <footer class="footer-banner">
+        🛡️ SEGURANÇA NÃO É SÓ UMA OBRIGAÇÃO. É VALOR PARA SUA EMPRESA E PROTEÇÃO PARA VIDAS.
+    </footer>
+
+</body>
+</html>
